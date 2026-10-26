@@ -6,31 +6,31 @@ visibility: public
 # categories: []
 contributions:
   commands:
-    - id: napari-apply-transforms.make_container_widget
-      python_name: napari_apply_transforms._widget:ImageThreshold
-      title: Make threshold Container widget
-    - id: napari-apply-transforms.make_magic_widget
-      python_name: napari_apply_transforms._widget:threshold_magic_widget
-      title: Make threshold magic widget
+    # - id: napari-apply-transforms.make_container_widget
+    #   python_name: napari_apply_transforms._widget:ImageThreshold
+    #   title: Make threshold Container widget
+    # - id: napari-apply-transforms.make_magic_widget
+    #   python_name: napari_apply_transforms._widget:threshold_magic_widget
+    #   title: Make threshold magic widget
     - id: napari-apply-transforms.make_function_widget
-      python_name: napari_apply_transforms._widget:threshold_autogenerate_widget
-      title: Make threshold function widget
-    - id: napari-apply-transforms.make_qwidget
-      python_name: napari_apply_transforms._widget:ExampleQWidget
-      title: Make example QWidget
+      python_name: napari_apply_transforms._widget:apply_points_transforms
+      title: Apply points transforms function widget
+    # - id: napari-apply-transforms.make_qwidget
+    #   python_name: napari_apply_transforms._widget:ExampleQWidget
+    #   title: Make example QWidget
   widgets:
-    - command: napari-apply-transforms.make_container_widget
-      display_name: Container Threshold
-    - command: napari-apply-transforms.make_magic_widget
-      display_name: Magic Threshold
+    # - command: napari-apply-transforms.make_container_widget
+    #   display_name: Container Threshold
+    # - command: napari-apply-transforms.make_magic_widget
+    #   display_name: Magic Threshold
     - command: napari-apply-transforms.make_function_widget
       autogenerate: true
       display_name: Autogenerate Threshold
-    - command: napari-apply-transforms.make_qwidget
-      display_name: Example QWidget
+    # - command: napari-apply-transforms.make_qwidget
+    #   display_name: Example QWidget
   menus:
     napari/layers/segment:
-      - command: napari-apply-transforms.make_container_widget
-      - command: napari-apply-transforms.make_magic_widget
+      # - command: napari-apply-transforms.make_container_widget
+      # - command: napari-apply-transforms.make_magic_widget
       - command: napari-apply-transforms.make_function_widget
-      - command: napari-apply-transforms.make_qwidget
+      # - command: napari-apply-transforms.make_qwidget
