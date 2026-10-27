@@ -1,7 +1,7 @@
 [project]
 name = "napari-apply-transforms"
 dynamic = ["version"]
-description = "Apply affine, rotate, scale, shear, translate and units to layers"
+description = "Apply affine, rotate, scale, shear, translate to napari layers"
 readme = "README.md"
 license = "BSD-3-Clause"
 license-files = ["LICENSE"]
