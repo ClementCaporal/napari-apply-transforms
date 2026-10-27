@@ -9,7 +9,11 @@
 [![npe2](https://img.shields.io/badge/plugin-npe2-blue?link=https://napari.org/stable/plugins/index.html)](https://napari.org/stable/plugins/index.html)
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-purple.json)](https://github.com/copier-org/copier)
 
-Apply affine, rotate, scale, shear, translate and units to layers
+Apply affine, rotate, scale, shear, and translate to layers.
+
+The goal was to allow user to save their csv of points after applying transforms to the points layer.
+
+> For now only points layers are supported, but open to issues/PRs to add support for other layers.
 
 ----------------------------------
 
