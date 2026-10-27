@@ -10,8 +10,18 @@
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-purple.json)](https://github.com/copier-org/copier)
 
 Apply scale → shear → rotate → translate → affine (in this order) to layers.
-
 The goal was to allow user to save their csv of points after applying transforms to the points layer.
+
+<img width="1142" height="774" alt="Screenshot 2026-10-27 at 17 40 44" src="https://github.com/user-attachments/assets/e5cf4005-7434-42d1-b73e-63c3cc3e6583" />
+
+Steps to reproduce:
+- Open napari
+- Create a points layer and populate it
+- Change any of its transformed (for example scale using plugin > napari metadata > layer metadata)
+- Open the apply transform widgets (Plugin > Apply Points Transforms)
+- Choose which transforms you want to apply
+- All the selected transforms will be applied to the coordinates of the points. The unselected transforms will be copied to the layer attributes. All points should have the same position than the source layer.
+
 
 > For now only points layers are supported, but open to issues/PRs to add support for other layers.
 
