@@ -21,6 +21,7 @@ Steps to reproduce:
 - Open the apply transform widgets (Plugin > Apply Points Transforms)
 - Choose which transforms you want to apply
 - All the selected transforms will be applied to the coordinates of the points. The unselected transforms will be copied to the layer attributes. All points should have the same position than the source layer.
+- You can now save or apply downstream analysis with applied transforms!
 
 
 > For now only points layers are supported, but open to issues/PRs to add support for other layers.
